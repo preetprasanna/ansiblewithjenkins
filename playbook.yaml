@@ -1,0 +1,9 @@
+- name: "manage worker1 and worker2"
+  hosts: all
+  become: true
+  tasks:
+  - name: "ensure prasanna user exists"
+    user: 
+      name: prasanna
+      state: present
+      
